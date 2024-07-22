@@ -42,12 +42,12 @@
 			<div class="outer">
 				<ul class="list-group">
 					{{ #articleList }}
-					<a href="/article/{{&id}}/{{&link}}.html" target="_self">
+					
 					<li class="list-group-item title">
 						<div class="date">{{ &createDate10 }}</div>
-						{{ &title }}
+						<a href="/article/{{&id}}/{{&link}}.html" target="_self">{{ &title }}</a>	
 					</li>
-					</a>	
+					
 					{{ /articleList }}
 				</ul>
 			</div>
